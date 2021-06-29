@@ -4,12 +4,12 @@ Created by Shaun Reynolds
 28/06/21"""
 
 # Integer checking function
-def intchecker(question, low, high): 
+def intchecker(question,low, high): 
   valid = False 
   while not valid: 
     error = f"Whoops! Please enter an integer between {low} and {high}: "
     try: 
-      response = int(input(f"Please enter an integer between {low} and {high}: ")))
+      response = int(input(question.format(low, high))))
       if low <= response <= high: 
         return response
       else: 
